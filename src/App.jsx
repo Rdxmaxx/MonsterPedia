@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./App.css";
 import CardList from "./components/card-list/card-list.component";
 import SearchBox from "./components/search-box/search-box.components";
 
@@ -29,7 +30,8 @@ class App extends Component {
     );
 
     return (
-      <div>
+      <div className="App">
+        <h1>Monster Pedia</h1>
         <SearchBox
           placeholder="search monsters"
           handleChange={this.handleChange}
